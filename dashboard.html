@@ -388,17 +388,30 @@
 </div>
 
 
-<!-- Health Points Tab (placeholder) -->
+<!-- Health Points Tab -->
 <div class="tab-content" id="tab-health">
   <div class="dashboard-inner">
     <div class="dashboard-view" style="width:100%;">
-      <div class="placeholder">
-        <h2 style="color:#1a237e;">Health Points</h2>
-        <p class="soon">Will be added soon</p>
+
+      <div class="status-row">
+        <div class="pill">Health Points Leaderboard</div>
+        <div class="search">
+          <input id="hp-search" placeholder="Search name or email…" />
+          <span class="muted" id="hp-meta"></span>
+        </div>
       </div>
+
+      <div class="table-wrap">
+        <table id="hp-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
     </div>
   </div>
 </div>
+
 
 <!-- Tickets Tab (placeholder with bars) -->
 <div class="tab-content" id="tab-tickets">
@@ -420,7 +433,7 @@
 <script>
   // ========= CONFIG =========
   const API_URL = "https://script.google.com/macros/s/AKfycbyU2YIGp55fzmJvhLP_DdNUTUCd6DbMHQUeayuFCL6xioWm7R0YB2L0KRftupQzGYR9Xw/exec";
-
+  const HP_API_URL = "https://script.google.com/macros/s/AKfycbz0_gCBgqShslQHah-Dfw8Y0WIljrf2paTLsLhuSu8XfidmVlNcpd7lbu0aNMdM_LJxLg/exec";
   // We expect the API JSON to include these keys:
   // {
   //   state: [...],
@@ -763,20 +776,144 @@ function renderCSProgress() {
       console.error(err);
     }
   }
+ // ========= HEALTH POINTS =========
+  let hpData = null;
 
+  async function loadHealthPoints() {
+    const meta = document.getElementById("hp-meta");
+    meta.textContent = "Loading…";
+
+    try {
+      const res = await fetch(HP_API_URL, { cache: "no-store" });
+      hpData = await res.json();
+      renderHealthPoints();
+    } catch (e) {
+      meta.textContent = "Failed to load";
+      console.error(e);
+    }
+  }
+
+  function renderHealthPoints() {
+    if (!hpData || !hpData.leaderboard) return;
+
+    const rows = hpData.leaderboard;
+    const search = document.getElementById("hp-search");
+    const meta = document.getElementById("hp-meta");
+    const table = document.getElementById("hp-table");
+
+    let filtered = rows;
+    if (search.value) {
+      const q = search.value.toLowerCase();
+      filtered = rows.filter(r =>
+        r.Name.toLowerCase().includes(q) ||
+        r.Email.toLowerCase().includes(q)
+      );
+    }
+
+    meta.textContent = `Students: ${filtered.length}`;
+
+    const thead = table.querySelector("thead");
+    const tbody = table.querySelector("tbody");
+    thead.innerHTML = "";
+    tbody.innerHTML = "";
+
+    const columns = ["Rank", "Name", "Email", "Current_HP", "Base_HP", "HP_Status", "Details"];
+
+    const trh = document.createElement("tr");
+    columns.forEach(c => {
+      const th = document.createElement("th");
+      th.textContent = c.replace("_", " ");
+      trh.appendChild(th);
+    });
+    thead.appendChild(trh);
+
+    filtered.forEach((r, i) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td class="num">${i + 1}</td>
+        <td>${r.Name}</td>
+        <td>${r.Email}</td>
+        <td class="num">${Number(r.Current_HP).toFixed(2)}</td>
+        <td class="num">${Number(r.Base_HP).toFixed(2)}</td>
+        <td>
+          <span style="
+            padding:4px 10px;
+            border-radius:999px;
+            font-weight:700;
+            font-size:12px;
+            color:${r.HP_Status === "SAFE" ? "#1B5E20" : "#B71C1C"};
+            background:${r.HP_Status === "SAFE" ? "#C8E6C9" : "#FFCDD2"};
+          ">
+            ${r.HP_Status}
+          </span>
+        </td>
+        <td>
+          <button onclick="viewHpDetail('${r.Email}')"
+            style="
+              padding:6px 10px;
+              border:none;
+              border-radius:6px;
+              background:#1a237e;
+              color:white;
+              cursor:pointer;
+              font-weight:600;
+            ">
+            View
+          </button>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  document.getElementById("hp-search")?.addEventListener("input", renderHealthPoints);
   // ========= UI WIRING =========
   function activateTopTab(key) {
-    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-    document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
 
-    document.querySelector(`.tab[data-tab="${key}"]`).classList.add("active");
-    document.getElementById(`tab-${key}`).classList.add("active");
+  document.querySelector(`.tab[data-tab="${key}"]`).classList.add("active");
+  document.getElementById(`tab-${key}`).classList.add("active");
 
-    if (key === "cs") {
-    renderCSProgress();
-  }
-  }
+  if (key === "cs") renderCSProgress();
+  if (key === "health" && !hpData) loadHealthPoints(); // 👈 ONLY LOAD ON DEMAND
+}
 
+async function viewHpDetail(email) {
+  const url = `${HP_API_URL}?detail=1&email=${encodeURIComponent(email)}`;
+  const res = await fetch(url);
+  const data = await res.json();
+
+  let html = `
+    <h3>Health Points Breakdown</h3>
+    <p class="small">${email}</p>
+    <table style="width:100%;border-collapse:collapse;margin-top:12px;">
+      <tr>
+        <th>Date</th>
+        <th>Source</th>
+        <th>%</th>
+        <th>Before</th>
+        <th>After</th>
+      </tr>
+  `;
+
+  (data.breakdown || []).forEach(r => {
+    html += `
+      <tr>
+        <td>${r.AppliedDate}</td>
+        <td>${r.SourceRef}</td>
+        <td class="num">${r.AppliedPercent}%</td>
+        <td class="num">${Number(r.CurrentHPBefore).toFixed(2)}</td>
+        <td class="num">${Number(r.CurrentHPAfter).toFixed(2)}</td>
+      </tr>
+    `;
+  });
+
+  html += "</table>";
+
+  const w = window.open("", "_blank", "width=720,height=600");
+  w.document.write(`<html><body style="font-family:Segoe UI;padding:20px;">${html}</body></html>`);
+}
   function activateInner(key) {
     // left menu active state
     document.querySelectorAll("#tab-leaderboard .menu-item").forEach(m => m.classList.remove("active"));
