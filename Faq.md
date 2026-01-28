@@ -15,10 +15,9 @@ order: 2
 5. [Completion & Certification](#5-completion--certification)
 6. [Discontinuation Policy](#6-discontinuation-policy)
 7. [ViBe Platform](#7-vibe-platform)
-8. [Cliq Channel](#8-cliq-channel)
-9. [MERN Case Studies](#9-mern-case-studies)
-10. [Ejection Policy](#10-ejection-policy)
-11. [Self-Healing Endorsement Network - Viva/Peer Evaluation System(PES)](#11-self-healing-endorsement-network---vivapeer-evaluation-systempes)
+8. [MERN Case Studies](#9-mern-case-studies)
+9. [Ejection Policy](#10-ejection-policy)
+10. [Self-Healing Endorsement Network - Viva/Peer Evaluation System(PES)](#11-self-healing-endorsement-network---vivapeer-evaluation-systempes)
 
 ---
 
@@ -102,12 +101,6 @@ Initially, try to get your query resolved from the FAQ. Check the Broadcast cliq
 
 Email **pinternship-support@vicharanashala.zohodesk.in**.  
 Responses are provided **within 2 hours** between **9:00 AM and 9:00 PM**.
-
-**4.2 What if I don’t receive a response within 24 hours?**  
-Use the **Pinternship - Escalation** Cliq channel/thread to raise your concern. We recommend that you follow the escalation policy.
-
-**4.3 Is this escalation process mandatory?**  
-Yes, this **three-step process** must be followed.
 
 ---
 
@@ -200,7 +193,7 @@ Try these troubleshooting steps in order:
 4. **Use a different browser**
 5. **Clear browsing data and cache**, then try to re-login
 
-If the issue persists after trying all steps, **record the issue** and email it to: **pinternship-support@vicharanashala.zohodesk.in**.
+If the issue persists after trying all steps, **record the issue** and email it to: **vinternship@vicharanashala.zohodesk.in**.
 
 **7.6 I have completed all videos and quizzes in the ViBe course, but my progress is still showing less than 100%. What should I do?**  
 
@@ -215,110 +208,10 @@ If the issue still persists after these steps, no further action is required fro
 
 ---
 
-## 8. Cliq Channel
 
-**8.1 How do I join the Cliq Channel?**  
-Follow these steps **only on a laptop or desktop** (mobile is not supported):
+## 8. MERN Case Studies
 
-1. Check your email for the **Cliq channel invite** and open it.
-2. Sign up or log in to **Zoho Cliq using Google**, using the **same email ID** on which you received the invite.
-3. In the left navigation bar, select **#Channels**.
-4. Click on the **Join** button.
-5. Locate all the channels starting with the name **Pinternship** and click **Join**.
-
-**8.2 I am unable to join the Cliq Channel due to the message “Collaboration with different regional external users in Zoho Cliq is disabled”. What should I do?**  
-
-If you face this issue, follow the steps below:
-
-1. Click on your **Profile icon** (top-right corner).
-2. Select **Admin Panel** under *My Organization*.
-3. Go to **Policies** under the *Permissions* section.
-4. Scroll down to **Channel and Direct Messages Collaboration**.
-5. Under **Universal Access**, enable **both checkboxes**.
-6. Refresh the Cliq page and try joining the channel again.
-
-If the issue persists, take a **screenshot or screen recording** clearly showing the error message, briefly explain the problem, and email it to:  
-**pinternship-support@vicharanashala.zohodesk.in** between **9:00 AM and 9:00 PM**.
-
-**8.3 I have joined the Cliq Channel, but I am unable to message in it. What should I do?**  
-
-This issue is usually caused by restricted collaboration permissions.
-
-Follow the steps mentioned in **8.2** to enable **Universal Access**, then refresh the page.
-
-If you are still unable to send messages, take a **screenshot or screen recording** of the issue, briefly explain the problem, and email it to:  
-**pinternship-support@vicharanashala.zohodesk.in** between **9:00 AM and 9:00 PM**.
-
-**8.4 How do I update my profile picture so everyone can view it?**  
-
-1. Open **Zoho Cliq** on desktop.
-2. Click your **Profile icon** (top-right corner).
-3. Click **My Zoho Account** next to the *Sign Out* button.
-4. Authorize using **Google**.
-5. Go to **Settings → Preferences**.
-6. Set **Profile Picture Visibility** to **Anyone**.
-7. Return to Cliq and **refresh the page**.
-8. Click your **Profile icon** again and upload a **clear profile picture** where your face is properly visible.
-9. Refresh the page once more and **wait for some time**, as it may take a while for the updated profile picture to become visible to everyone.
-
-
-**8.5 How can I use the Cliq Channel effectively?**  
-
-- Ask queries only in the **designated Cliq channel**.
-- Reply **only within the relevant thread**, not in the main channel.
-- Avoid direct messages unless explicitly instructed.
-- Help peers whenever possible in the relevant thread to earn **health points**.
-- Before posting a query, check recent threads to see if the same question has already been asked.
-- While reacting to messages, use:
-  - 👍 to acknowledge a query as soon as it is submitted  
-  - ✅ to mark a query as resolved  
-  - 🔔 for FYI or informational updates  
-  - ➕ if you are facing the same issue  
-
-These practices help maintain clarity and ensure no updates are missed.
-
-**8.6 I'm having issues with profile pictures on Cliq Channel. What should I do?**  
-
-If you're facing profile picture issues, try these troubleshooting steps:
-
-**For specific user profile picture issues:**
-1. Navigate to **accounts.zoho.com**
-2. Go to **Settings**
-3. Check whether the **Profile Picture Visibility** is set to:
-   - **"Only users in my organization"** or
-   - **"Everyone"**
-
-**If you cannot see any user profile pictures:**
-1. **Hard-refresh your browser** and **clear cookies and cache**
-2. Follow this guide: https://help.codehs.com/en/articles/4951972-how-to-clear-your-browser-cache-and-hard-refresh
-
-**If issues still persist:**
-- This may be due to your **data center being mapped to US instead of India**
-- Send an email with detailed issue description to: **support@zohocliq.com**
-
-**8.7 Why is it mandatory to update my Display Picture (DP)?**  
-Updating your DP with a clear photo of your face helps establish your identity in the community. This reduces risks such as impersonation, cyberbullying, and misuse of the platform, similar to showing an ID card in a physical organization.
-
-**8.8 What kind of Display Picture is allowed?**  
-Only original photographs clearly showing your face are allowed. GenAI-generated images, avatars, cartoons, logos, or group photos are not permitted.
-
-**8.9 What is the penalty for posting messages without an updated DP?** 
-- From now on, posting any message without a compliant DP will result in an immediate –10% HP deduction.  
-- In addition to the immediate –10% HP deduction for posting, there will be an additional daily –10% HP deduction for continued non-compliance.
-  
-**8.10 How do I join the Cliq channels with my college mail ID?**  
-
-Follow these steps to join the internship channels using your college email:
-
-1. **Create an account** on Zoho Cliq using your **COLLEGE MAIL ID**
-2. Access your **college mail inbox** and accept the request to join the **pinternship channels**
-Make sure to use your college email ID throughout the process to ensure proper access and identification.
-
----
-
-## 9. MERN Case Studies
-
-**9.1 What are Case Studies?**  
+**8.1 What are Case Studies?**  
 Case studies are the **second required component** (Advanced Learning) of the Pinternship program. They are well-structured, documentation-based lessons designed to help you apply what you learned in ViBe training through **hands-on coding**. Each case study focuses on real-world problem-solving, collaborative thinking, and practical implementation to help you become more confident with the technologies covered.
 
 Case studies are organized by technology, including:
@@ -334,10 +227,10 @@ Each case study includes:
 - Practical coding tasks
 - Best practices and recommended patterns
 
-**9.2 Are Case Studies mandatory?**  
+**8.2 Are Case Studies mandatory?**  
 Yes. Case studies are a **required component** for completing the Pinternship program. All participants must complete the case studies after finishing ViBe training and before moving to the Projects phase.
 
-**9.3 How do I get started with Case Studies?**  
+**8.3 How do I get started with Case Studies?**  
 After completing all ViBe MERN modules:
 
 1. Click the **Case Studies** link in the navigation bar at the top of the page.
@@ -348,10 +241,10 @@ After completing all ViBe MERN modules:
 5. Getting stuck is normal. You can ask questions on Cliq, revisit the ViBe videos, and discuss with others.
 7. Submit your work using the submission link provided on your cohort specific page.
 
-**9.4 What comes after Case Studies?**  
+**8.4 What comes after Case Studies?**  
 After completing case studies, you move ahead to the Endorsement phase. The Self-healing endorsement network is a peer evaluation strategy that the learner needs to accomplish before getting into the next phase. The learner is expected to take an endorsement from a peer and move ahead to the third component that is **Practical Learning (Projects)**. Please visit - [The Self-Healing Endorsement Network page]({{ site.baseurl }}/endorsements/) to learn more about endorsements.
 
-**9.5 How do I submit the case studies?**  
+**8.5 How do I submit the case studies?**  
 
 1. Visit the submission form provided in your cohort specific pages.
 2. Fill in all required details carefully, including:
@@ -364,11 +257,11 @@ After completing case studies, you move ahead to the Endorsement phase. The Self
 5. Repeat this process for **each lesson** you complete.
 
 
-**9.6 What should I do if a lesson contains multiple files?**  
+**8.6 What should I do if a lesson contains multiple files?**  
 For lessons (such as React) that involve **multiple files**, compress all related files into a **single ZIP file** and upload the ZIP file during submission.
 
 
-**9.7 Where can I get help if I am stuck with the case studies?**  
+**8.7 Where can I get help if I am stuck with the case studies?**  
 If you are facing difficulties, feel free to:
 - Join the **breakout rooms** during Zoom sessions  
 - Collaborate and discuss solutions with your peers  
@@ -376,23 +269,23 @@ If you are facing difficulties, feel free to:
 This collaborative approach is encouraged to enhance learning and problem-solving skills.
 
 
-**9.8 Where can I view my submission status and access the leaderboard and dashboard?**  
+**8.8 Where can I view my submission status and access the leaderboard and dashboard?**  
 You can track your submission status, access the leaderboard, and view the dashboard by visiting the Pinternship Live Dashboard section on your cohort specific page.
 
-**9.9. What next if I completed my Case Studies and I am done with my endorsements?**
+**8.9. What next if I completed my Case Studies and I am done with my endorsements?**
 We have some project ideas from the existing open source projects from Vicharanashala Lab for Education Design and Annam.AI listed on the Pinternship website. You can contribute to these real-time open-source projects, working with our developers to build real applications and add new features.
 
 
-## 10. Ejection Policy
+## 9. Ejection Policy
 
-**10.1 What is the Ejection Policy?**  
+**9.1 What is the Ejection Policy?**  
 The Ejection Policy is a structured mechanism designed to maintain a high-energy, focused learning environment. It ensures that the internship cohort consists of actively engaged participants who are consistently making progress. The policy promotes momentum, accountability, and fairness across the cohort.
 
-**10.2 Why does the program have an Ejection Policy?**  
+**9.2 Why does the program have an Ejection Policy?**  
 The policy exists to protect the learning ecosystem. Collaborative activities such as peer-to-peer viva sessions, case study discussions, and cohort-based learning are meaningful only when participants are equally invested. The Ejection Policy ensures that program resources are dedicated to committed learners and that prolonged disengagement does not dilute the experience for others.
 
 
-**10.3 What are the types of ejection in this program?**  
+**9.3 What are the types of ejection in this program?**  
 There are **two types of ejection**:
 
 - **Forward Eject (The Ascent):**  
@@ -402,10 +295,10 @@ There are **two types of ejection**:
   Participants who remain persistently inactive or disengaged may be removed from the program to preserve the quality and seriousness of the cohort.
 
 
-**10.4 What does “Backward Eject” mean?**  
+**9.4 What does “Backward Eject” mean?**  
 Backward Eject refers to the removal of a participant from the internship due to sustained inactivity. This ensures that collaborative learning activities are conducted among participants who are actively contributing and progressing.
 
-**10.5 How is inactivity measured for Backward Ejection?**  
+**9.5 How is inactivity measured for Backward Ejection?**  
 Backward Ejection is triggered **only if both conditions are met simultaneously**:
 
 1. Your average daily progress on the ViBe platform falls **below 3.33% per day**, **and** 
@@ -413,27 +306,27 @@ Backward Ejection is triggered **only if both conditions are met simultaneously*
 
 This dual-condition check ensures fairness and prevents short-term slowdowns from being penalized.
 
-**10.6 Is the ejection process manual or automated?**  
+**9.6 Is the ejection process manual or automated?**  
 The process will be **automated and data-driven**. An algorithm objectively evaluates progress and cohort standing, ensuring transparency and eliminating subjective bias or manual intervention. Manual intervention at a higher level is currently in place to oversee the ejection and ensure correctness.
 
-**10.7 Can I avoid being ejected from the program?**  
+**9.7 Can I avoid being ejected from the program?**  
 Yes. Maintaining steady progress above the minimum threshold and remaining actively engaged with the ViBe platform ensures that your position in the program remains secure.
 
-**10.8 Is the Ejection Policy the same as the Discontinuation Policy?**  
+**9.8 Is the Ejection Policy the same as the Discontinuation Policy?**  
 No. The **Discontinuation Policy** addresses prolonged inactivity at an administrative level. The **Ejection Policy** is a real-time, algorithm-based mechanism focused on maintaining cohort momentum, engagement health, and learning quality.
 
-**10.9 Can I appeal an ejection decision?**  
+**9.9 Can I appeal an ejection decision?**  
 No. Ejection decisions are **final and non-appealable**, as they are based on objective, automated criteria applied uniformly across the cohort.
 
 
-**10.10 Does being ejected affect future opportunities?**  
+**9.10 Does being ejected affect future opportunities?**  
 Backward Ejection removes you from the current cohort only. Forward Ejection, however, may open pathways to advanced leadership roles or fellowship nominations based on demonstrated excellence and reflective learning practices.
 
 ---
 
-## 11. Self-Healing Endorsement Network - Viva/Peer Evaluation System(PES)
+## 10. Self-Healing Endorsement Network - Viva/Peer Evaluation System(PES)
 
-**11.1 What is the Self-Healing Endorsement Network?**  
+**10.1 What is the Self-Healing Endorsement Network?**  
 The **Self-Healing Endorsement Network** is the official evaluation framework for the Case study activity completion for the learners.
 
 It is a **peer-driven endorsement system** where interns endorse each other’s learning and contributions. All endorsements together form a **connected endorsement network**.
@@ -444,7 +337,7 @@ For the network to remain valid:
 - Floating islands are considered **inactive**, and endorsements within them **will not be counted**
 
 
-**11.2 Who are the Jedi and what role do they play?**  
+**10.2 Who are the Jedi and what role do they play?**  
 A **Jedi** is an intern who holds a **Silver, Bronze, or Gold ticket**.
 
 Their role in the network:
@@ -452,7 +345,7 @@ Their role in the network:
 - Jedi act as **anchors** that validate and legitimize endorsement chains
 
 
-**11.3 Is endorsement mandatory to complete the internship?**  
+**10.3 Is endorsement mandatory to complete the internship?**  
 Yes, **every non-Jedi intern must receive one valid endorsement** to successfully complete the internship.
 
 Important points:
@@ -461,7 +354,7 @@ Important points:
 - Interns who remain **unendorsed or disconnected** risk **non-completion of the internship**
 
 
-**11.4 How many endorsements can I receive or give?**  
+**10.4 How many endorsements can I receive or give?**  
 - Each intern can **receive only one endorsement**
 - An intern may **endorse multiple other interns**
 - There is **no upper limit** on how many endorsements you can give  
@@ -469,7 +362,7 @@ Important points:
 However, a **tree with greater length rather than breadth** is encouraged to maintain strong, meaningful chains rather than shallow mass endorsements.
 
 
-**11.5 When am I allowed to endorse someone?**  
+**10.5 When am I allowed to endorse someone?**  
 You may endorse anyone **at your discretion**, after assessing them in any way you find appropriate.
 
 Recommended best practices:
@@ -481,7 +374,7 @@ Recommended best practices:
 Endorsing someone with **inadequate MERN fundamentals** may trigger **audit penalties** for the **entire tree or subtree** connected to that endorsement.
 
 
-**11.6 Can I endorse or be endorsed by someone from my own college?**  
+**10.6 Can I endorse or be endorsed by someone from my own college?**  
 Yes, this is **allowed**.
 
 However:
@@ -491,7 +384,7 @@ However:
 This is **not prohibited**, but interns are expected to endorse **responsibly and ethically**.
 
 
-**11.7 How do audits work in the endorsement network?**  
+**10.7 How do audits work in the endorsement network?**  
 Audits are conducted by **Bhavna** to identify interns who need improvement and work on Case studies before they get into the project phase.
 
 If a **Needs Improvement** intern is identified:
@@ -500,13 +393,13 @@ If a **Needs Improvement** intern is identified:
 - The **intern and anyone who fails the audit** are **removed from the network**
 
 
-**11.8 What happens if I am certified as “good” during an audit?**  
+**10.8 What happens if I am certified as “good” during an audit?**  
 If an intern is certified as **“good”** by Bhavna ma’am:
 - They become **eligible to be endorsed by anyone**, even if they were previously disconnected
 - Their **credibility and trust score** within the network increases
 
 
-**11.9 What incentives exist within the endorsement network?**  
+**10.9 What incentives exist within the endorsement network?**  
 The network is intentionally designed to be **self-healing and incentive-driven**.
 
 Whenever a new intern joins a **valid connected endorsement group**:
@@ -520,7 +413,7 @@ This encourages:
 - Avoidance of risky or isolated endorsement chains
 
 
-**11.10 What data is used to manage endorsements?**  
+**10.10 What data is used to manage endorsements?**  
 Endorsements are tracked using a **three-column dataset**:
 
 - **Member 1** → the endorser  
@@ -538,7 +431,7 @@ This dataset is used to:
 - Conduct audits efficiently
 
 
-**11.11 How do I submit endorsements? (Google Form instructions)**  
+**10.11 How do I submit endorsements? (Google Form instructions)**  
 All endorsements and de-endorsements must be submitted through the **official Google Form**:
 
 🔗 **Endorsement Form Link:**  Check on your Cohort specific page which you can access from the homepage.
@@ -561,7 +454,7 @@ The form contains **mandatory sections**:
 YET TO BE ANNOUNCED**. -->
 
 
-**11.12 What should interns keep in mind while endorsing others?**  
+**10.12 What should interns keep in mind while endorsing others?**  
 - Avoid careless, bulk, or reciprocal endorsements
 - Ensure your endorsement chain **connects to a Jedi**
 - Endorse based on **knowledge, effort, and contribution**
